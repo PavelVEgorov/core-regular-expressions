@@ -4,8 +4,9 @@
 
 // Определи, есть ли во входной строке номер СНИЛС.
 function hasSNILS(string) {
+  return(/\d{3}-\d{3}-\d{3}\s\d{2}/gi).test(string);
 }
-
+console.log(hasSNILS('The number is 234-600-142 22'))
 
 // Найди и верни номер СНИЛС из строки.
 function grabSNILS(string) {
